@@ -1,0 +1,355 @@
+@charset "UTF-8";
+
+
+/*ロゴマーク*/
+img.logo{
+	display: block;
+	margin: auto;
+}
+
+/*game画面*/
+img.game{
+	width: 320px;
+	height: 180px;
+}
+img.rulet{
+	width: 200px;
+}
+
+/*ターン目*/
+.turn_no{
+	font-size: 50px;
+	margin: 50px 0 0 10px;
+}
+
+/*ランキングの表用*/
+.player{
+	text-align: center;
+	margin: 20px 0 0 0;
+	margin-left: auto;
+    margin-right: auto;
+	font-weight: bold;
+	width: 400px;
+	border: 10px outset #ffffff;
+}
+/*topランキングの表が動かなーい*/
+table.top_ranking{
+	margin: 100px 0 0 30px;
+	text-align: center;
+	border-collapse:collapse;
+	border-spacing: 5px;
+	width: 400px;
+	background-color: 	#000000;
+	color: #FFFFFF;
+}
+
+/*ゴールのサブミットボタンの設定*/
+.rankbotan{
+	margin: 20px 0 0 0;
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+	/*display       : inline-block;*/
+	border-radius : 5%;          /* 角丸       */
+	font-size     : 18pt;        /* 文字サイズ */
+	text-align    : center;      /* 文字位置   */
+	cursor        : pointer;     /* カーソル   */
+	padding       : 12px 12px;   /* 余白       */
+	background    : #000000;     /* 背景色     */
+	color         : #ffffff;     /* 文字色     */
+	line-height   : 1em;         /* 1行の高さ  */
+	transition    : .3s;         /* なめらか変化 */
+	box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+	border        : 2px solid #000000;    /* 枠の指定 */
+}
+.rankbotan:hover {
+	box-shadow    : none;        /* カーソル時の影消去 */
+	color         : #000000;     /* 背景色     */
+	background    : #ffffff;     /* 文字色     */
+}
+
+/*ゴール画面のTOPへaタグ*/
+.top_a{
+	display: block;
+	text-align: center;
+}
+
+/*画像の表示*/
+img.game_gazou{
+	float: left;
+	width: 420px;
+	height: 320px;
+}
+
+/*マス数の表示*/
+.masu_no{
+	color: #ffffff;
+	text-align: center;
+	font-size:  30px;
+	font-weight: bold;
+	margin: 0 410px 0 0;
+	-webkit-text-stroke: 2px #000000;
+}
+
+/*ゲームのテキスト*/
+.game_msg{
+	color: #ffffff;
+	text-align: center;
+	font-size:  23px;
+	font-weight: bold;
+	margin: 0 410px 0 0;
+	padding: 0 20px 0 20px;
+	-webkit-text-stroke: 1px #000000;
+}
+
+/*マスのテキスト*/
+.masu_msg{
+	text-align: center;
+	font-weight: bold;
+	border: double 4px #ffffff;
+	margin: 0 460px 0 470px;
+	padding: 100px 40px 100px 40px;
+	background: #898880;
+	color: #001e43;
+	border-radius : 5%;
+	transition    : .3s;
+}
+
+.start{
+	display:inline;
+	text-align: center;
+	font-weight: bold;
+	font-size:  40px;
+	-webkit-text-stroke: 2px #ffffff;
+	background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+	background: -webkit-linear-gradient(left, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+	background: -o-linear-gradient(right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+	background: -moz-linear-gradient(right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	vertical-align: middle;
+
+}
+.goal2{
+	display:inline;
+	text-align: center;
+	font-weight: bold;
+	font-size:  40px;
+	-webkit-text-stroke: 2px #ffffff;
+	background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+	background: -webkit-linear-gradient(left, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+	background: -o-linear-gradient(right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+	background: -moz-linear-gradient(right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	vertical-align: middle;
+}
+.hikouki{
+	display:inline;
+	font-size:  50px;
+	color: #ffff00;
+	vertical-align: middle;
+}
+.maru{
+		display:inline;
+		letter-spacing: -0.4em;
+		color: #ffffff;
+		vertical-align: middle;
+}
+.container{
+  width: 80%; /* 幅は親要素の80% */
+  max-width: 100%; /* 幅は最大500pxまでしか広げない */
+  margin: 0 auto; /* 左右をauto指定にして左右中央揃えに */
+}
+
+/*テーブルの設定*/
+.game_tadle{
+	float: right;
+	margin: 0 50px 0 0;
+	border: 10px outset #ffffff;
+}
+
+/*サブミットボタン設定*/
+.botan{
+	margin: -90px 60px 0 0;
+	margin-left: auto;
+    /*margin-right: auto;*/
+    display: block;
+	/*display       : inline-block;*/
+	border-radius : 5%;          /* 角丸       */
+	font-size     : 18pt;        /* 文字サイズ */
+	text-align    : center;      /* 文字位置   */
+	cursor        : pointer;     /* カーソル   */
+	padding       : 12px 12px;   /* 余白       */
+	background    : #000000;     /* 背景色     */
+	color         : #ffffff;     /* 文字色     */
+	line-height   : 1em;         /* 1行の高さ  */
+	transition    : .3s;         /* なめらか変化 */
+	box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+	border        : 2px solid #000000;    /* 枠の指定 */
+}
+.botan:hover {
+	box-shadow    : none;        /* カーソル時の影消去 */
+	color         : #000000;     /* 背景色     */
+	background    : #ffffff;     /* 文字色     */
+}
+
+/*ゴール！！のテキストの表示*/
+.goal{
+	text-align: center;
+	font-weight: bold;
+	font-size:  100px;
+	-webkit-text-stroke: 2px #ffffff;
+	background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+	background: -webkit-linear-gradient(left, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+	background: -o-linear-gradient(right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+	background: -moz-linear-gradient(right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/*ゴールメッセージ*/
+.goal_msg{
+	text-align: center;
+	font-weight: bold;
+	font-size:  40px;
+	margin: -100px 0 0 0;
+	color: #ffffff;
+	-webkit-text-stroke: 2px #9a0d7c;
+}
+
+.hane1{
+	float: left;
+	margin: 10px 0 0 280px;
+}
+.hane2{
+	float: right;
+	margin: 10px 280px 0 0;
+}
+/*route*/
+
+/*背景*/
+
+/*戻るボタン*/
+img.Gry{
+	width: 20%;
+	height: auto;
+}
+
+/*ユーザー登録*/
+.btn-real {
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(152, 152, 152, 0.43);/*アイコン色*/
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 20px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  background-image: linear-gradient(#e8e8e8 0%, #d6d6d6 100%);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+  border-bottom: solid 2px #b5b5b5;
+}
+.btn-real i {
+  line-height: 80px;
+}
+.btn-real:active {
+  /*押したとき*/
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+  border-bottom: none;
+}
+
+/*ゆーざー生成*/
+.loading span {
+  display: inline-block;
+  margin: 0 -.05em;
+  animation: loading 1.4s infinite alternate;
+}
+loading span:nth-child(2) {
+  animation-delay: .1s;
+}
+loading span:nth-child(3) {
+  animation-delay: .2s;
+}
+loading span:nth-child(4) {
+  animation-delay: .3s;
+}
+loading span:nth-child(5) {
+  animation-delay: .4s;
+}
+loading span:nth-child(6) {
+  animation-delay: .5s;
+}
+loading span:nth-child(7) {
+  animation-delay: .6s;
+}
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+/*4/21更新分(問い合わせページ作成の為)*/
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+.sam {
+	font-size:3em;
+	text-align:center;
+	line-height:0.95em;
+	font-weight:bold;
+	color: #FFF;
+	text-shadow:
+		0 0 0.05em #F06292,
+		0 0 0.10em #F06292,
+		0 0 0.15em #F06292,
+		0 0 0.30em #F06292;
+	filter: saturate(80%);
+}
+header{
+	display: flex;
+	width: 100%;
+	height: 30px;
+	align-items:center;
+	position: fixed;
+	opacity:0.7;
+	text-align: right;
+}
+header form{
+	font-weight: bold;
+	font-size: 20;
+	color: white;
+	margin-left: 70%;
+}
